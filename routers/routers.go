@@ -3,6 +3,9 @@ package routers
 import (
 	"GBT/Config"
 	MiddleJWT "GBT/common/jwt"
+	"GBT/controller/api/Controller/Sys"
+	"GBT/controller/api/Controller/common"
+	"GBT/model/Model/ModelIntegration"
 	"fmt"
 	"github.com/casbin/casbin"
 	"github.com/casbin/gorm-adapter"
@@ -12,10 +15,6 @@ import (
 )
 
 var Enforcer *casbin.Enforcer
-
-func init() {
-	CasbinSetup()
-}
 
 // 初始化casbin
 func CasbinSetup() {
@@ -49,6 +48,10 @@ func InitServer() {
 	server := gin.Default()
 	// 初始化数据库连接
 	Config.InitConnect()
+	// 自动创建表
+	ModelIntegration.AutoMigrateRBAC()
+	// 初始化Casbin
+	_ = common.InitCsbinEnforcer()
 
 	//初始化casbin
 	//server.Use(Authorize())
@@ -57,6 +60,7 @@ func InitServer() {
 	server.Use(MiddleJWT.Cors())
 	server.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// 路由分组
+	menu := Sys.Menu{}
 	api := server.Group("api")
 	{
 		// orm练手测试
@@ -93,6 +97,36 @@ func InitServer() {
 				}
 			}
 		})
+		// 测试Casbin
+		api.GET("/menu/list", menu.List)
+		api.GET("/menu/detail", menu.Detail)
+		api.GET("/menu/allmenu", menu.AllMenu)
+		api.GET("/menu/menubuttonlist", menu.MenuButtonList)
+		api.POST("/menu/delete", menu.Delete)
+		api.POST("/menu/update", menu.Update)
+		api.POST("/menu/create", menu.Create)
+		user := Sys.User{}
+		api.GET("/user/info", user.Info)
+		api.POST("/user/login", user.Login)
+		api.POST("/user/logout", user.Logout)
+		api.POST("/user/editpwd", user.EditPwd)
+		admins := Sys.Admins{}
+		api.GET("/admins/list", admins.List)
+		api.GET("/admins/detail", admins.Detail)
+		api.GET("/admins/adminsroleidlist", admins.AdminsRoleIDList)
+		api.POST("/admins/delete", admins.Delete)
+		api.POST("/admins/update", admins.Update)
+		api.POST("/admins/create", admins.Create)
+		api.POST("/admins/setrole", admins.SetRole)
+		role := Sys.Role{}
+		api.GET("/role/list", role.List)
+		api.GET("/role/detail", role.Detail)
+		api.GET("/role/rolemenuidlist", role.RoleMenuIDList)
+		api.GET("/role/allrole", role.AllRole)
+		api.POST("/role/delete", role.Delete)
+		api.POST("/role/update", role.Update)
+		api.POST("/role/create", role.Create)
+		api.POST("/role/setrole", role.SetRole)
 	}
 	_ = server.Run(":8099")
 }

@@ -10,7 +10,7 @@ var (
 )
 
 func InitConnect()  {
-	dsn:="root:root@(127.0.0.1:3306)/test?charset=utf8&parseTime=true&loc=Local"
+	dsn:="root:root@(127.0.0.1:3306)/castest?charset=utf8&parseTime=true&loc=Local"
 	DB,_=gorm.Open("mysql",dsn)
 	//if err != nil {
 	//	panic(err)
@@ -20,6 +20,11 @@ func InitConnect()  {
 
 	//student.CreateTable()
 	//AutoMigrate()
+	//err:=DB.AutoMigrate(&RBAC.Menu{},&RBAC.Admins{},&RBAC.RoleMenu{},&RBAC.Role{},&RBAC.AdminsRole{}).Error
+	//if err != nil {
+	//	fmt.Println("AutoMigrate is wrong... : ",err)
+	//	return
+	//}
 }
 
 func CloseDB() {

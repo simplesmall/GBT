@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb408e2f-e4b0-4860-bd6e-4286986e250e" name="Default Changelist" comment="" />
+    <list default="true" id="eb408e2f-e4b0-4860-bd6e-4286986e250e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/EnforcerInstance/Enforcer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Convert/cast.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Convert/cast_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Convert/caste.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Convert/convert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/byte.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/byte_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/file_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/Hash/string_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/cache/freecache.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/file/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/file/getdir.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/jwt/jwt-go.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/logger/zap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Utils/util/uuid.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/common/casbin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/common/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/common/queryForm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/sys/admins.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/sys/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/sys/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/api/Controller/sys/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/BaseModel/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/ModelIntegration/ALC.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/admins.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/admins_role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/RBAC/role_menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/admins.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/admins_role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/role.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/Sys/role_menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/common/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Model/common/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/Config/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/routers.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,31 +80,40 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$APPLICATION_HOME_DIR$/SDK" />
+  <component name="GOROOT" path="$PROJECT_DIR$/../../SDK" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1nN8sJzdcuZXUWKjxqXNdZGfjRa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/model/Model" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Go\GoProjects\GBT\model\Model" />
+      <recent name="D:\Go\GoProjects\GBT\common\Utils" />
+      <recent name="D:\Go\GoProjects\GBT\controller\api\Controller" />
+      <recent name="D:\Go\GoProjects\GBT\model\Model\basemodel" />
       <recent name="D:\JetbrainProjects\GolandProjects\GBT\common\utils" />
-      <recent name="D:\JetbrainProjects\GolandProjects\GBT\model\Response" />
-      <recent name="D:\JetbrainProjects\GolandProjects\GBT\common\jwt" />
-      <recent name="D:\JetbrainProjects\GolandProjects\GBT\routers" />
-      <recent name="D:\JetbrainProjects\GolandProjects\GBT" />
     </key>
   </component>
   <component name="RunManager">
@@ -71,6 +146,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -79,21 +165,29 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2993" y="534" key="#Go_Modules/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1611219895703" />
-    <state width="2517" height="363" key="GridCell.Tab.0.bottom" timestamp="1611224433660">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1611254185188">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611245239350" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611254185188" />
     <state width="2517" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1611224433660" />
-    <state width="2517" height="363" key="GridCell.Tab.0.center" timestamp="1611224433660">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1611254185188">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611245239349" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611254185188" />
     <state width="2517" height="363" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1611224433660" />
-    <state width="2517" height="363" key="GridCell.Tab.0.left" timestamp="1611224433660">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1611254185187">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611245239349" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611254185187" />
     <state width="2517" height="363" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1611224433660" />
-    <state width="2517" height="363" key="GridCell.Tab.0.right" timestamp="1611224433660">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1611254185188">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611245239349" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611254185188" />
     <state width="2517" height="363" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1611224433660" />
     <state x="2440" y="381" width="540" height="1016" key="StructurePopup" timestamp="1611224847156">
       <screen x="1920" y="0" width="2560" height="1400" />
